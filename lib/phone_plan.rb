@@ -6,14 +6,12 @@ class PhonePlan
   end
 
   def cost
-    plan.cost_for(number_of_phones, price)
+    plan.cost_for(@number_of_phones, @price)
   end
 
   private
 
-  attr_reader :number_of_phones, :price, :type
-
   def plan
-    Object.const_get(type.capitalize + "PhonePlan")
+    Object.const_get(@type.capitalize + "PhonePlan")
   end
 end
