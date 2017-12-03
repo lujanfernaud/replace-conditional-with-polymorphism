@@ -67,7 +67,7 @@ end
 
 ### Highlights
 
-- Extract `IndividualPhonePlan`
-- Extract `FamilyPhonePlan`
-- Extract `BusinessPhonePlan`
-- Get the phone plan dynamically using `Object.const_get` and remove `if else` statements in `PhonePlan#cost`
+- Extract `IndividualPhonePlan` ([see commit](https://github.com/lujanfernaud/replace-conditional-with-polymorphism/commit/c3776715e4853cbff7ed7dd3c6ec28062b73258b))
+- Extract `FamilyPhonePlan` ([see commit](https://github.com/lujanfernaud/replace-conditional-with-polymorphism/commit/bb358dded003cf4b15c8c0e3221073c466e6b507))
+- Extract `BusinessPhonePlan` ([see commit](https://github.com/lujanfernaud/replace-conditional-with-polymorphism/commit/bbedf15707b56ec5ac6d79aba5f1f610acc49f95))
+- Get the phone plan dynamically and remove `if else` statements in `PhonePlan#cost` ([see commit](https://github.com/lujanfernaud/replace-conditional-with-polymorphism/commit/d2d42daaccea86da4855159535ab262e13e7c79e))
