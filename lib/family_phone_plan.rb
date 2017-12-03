@@ -1,4 +1,6 @@
 class FamilyPhonePlan
+  COST_PER_EXTRA_PHONE = 10
+
   def self.cost_for(number_of_phones, price)
     new(number_of_phones, price).cost
   end
@@ -9,9 +11,16 @@ class FamilyPhonePlan
   end
 
   def cost
-    number_of_extra_phones = @number_of_phones - 1
-    cost_per_extra_phone = 10
+    @price + extra_phones_cost
+  end
 
-    @price + (number_of_extra_phones * cost_per_extra_phone)
+  private
+
+  def extra_phones_cost
+    number_of_extra_phones * COST_PER_EXTRA_PHONE
+  end
+
+  def number_of_extra_phones
+    @number_of_phones - 1
   end
 end
