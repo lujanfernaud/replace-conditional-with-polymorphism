@@ -11,13 +11,7 @@ class PhonePlan
     elsif type == "family"
       FamilyPhonePlan.cost_for(number_of_phones, price)
     elsif type == "business"
-      subtotal = number_of_phones * price
-
-      if number_of_phones < 50
-        subtotal * 0.75
-      else
-        subtotal * 0.50
-      end
+      BusinessPhonePlan.cost_for(number_of_phones, price)
     end
   end
 
