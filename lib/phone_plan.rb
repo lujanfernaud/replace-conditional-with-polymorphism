@@ -9,10 +9,7 @@ class PhonePlan
     if type == "individual"
       IndividualPhonePlan.cost_for(number_of_phones, price)
     elsif type == "family"
-      number_of_extra_phones = number_of_phones - 1
-      cost_per_extra_phone = 10
-
-      price + (number_of_extra_phones * cost_per_extra_phone)
+      FamilyPhonePlan.cost_for(number_of_phones, price)
     elsif type == "business"
       subtotal = number_of_phones * price
 
