@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe FamilyPhonePlan do
   describe '.cost_for' do
-    it 'returns cost for plan' do
+    it 'discounts each additional phone' do
       number_of_phones = 3
       price = 40
 

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe IndividualPhonePlan do
   describe '.cost_for' do
-    it 'returns cost for plan' do
+    it 'multiplies the price by the number of phones' do
       number_of_phones = 3
       price = 40
 
